@@ -16,15 +16,14 @@
         function login() {
             fetch("http://10.36.174.26:8000/",{
                 method:'POST',
-                mode:"no-cors",
+                mode:"cors",
                 headers:{'Content-Type':'application/json'},
                 body:JSON.stringify({
                     name:'disen',
                     pwd:'123'
                 })
-            }).then(response=> response.json())
-                .then(data=>
-                    console.log(data.msg)
+            }).then(response => response.json())
+                .then(json => console.log(json)
                 )
         }
     </script>
