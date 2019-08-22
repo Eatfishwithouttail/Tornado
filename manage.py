@@ -13,6 +13,6 @@ if __name__ == '__main__':
 
     app = make_app(options.options.host)
     app.listen(options.options.port)
-
+    print(options.options.port)
     print("starting web server http://%s:%s" % (options.options.host, options.options.port))
     IOLoop.current().start()
