@@ -35,6 +35,7 @@ class TestMennu(TestCase):
     def test_get(self):
         m = session.query(Menu).get(1)
         print(m.title)
+        print(m.url)
         print(m.childs)
         for cm in m.childs:
             print(cm)

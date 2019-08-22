@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+
+{% block head %}
+    {{ onetap[0].title }}
+{% end %}
+{% block headchild %}
+    {% for child in onetap[0].childs %}
+<li class="list_li" > <a href="{{ child.url }}">{{ child }}</a></li>
+    {% end %}
+{% end %}
+
+
+{% block body %}
+    {{ onetap[1].title }}
+{% end %}
+{% block bodychild %}
+    {% for child in onetap[1].childs %}
+       <li class="list_li"><a href="{{ child.url }}">{{ child }}</a>&nbsp;<a href="/user">删除</a></li>
+    {% end %}
+{% end %}
+
+

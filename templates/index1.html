@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INdex pages</title>
+    <link rel="icon" href="static/imgs/facicon.ico">
+    <link rel="stylesheet" href="/s/css/my.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            {% for foo in menus %}
+                <li>{{ foo }}</li>
+            {% end %}
+        </ul>
+    </nav><br>
+    <h3>我是主页</h3>
+    <p>
+        {{ msg }}
+    </p>
+    <p>{{ "hi,disen"[-4:] }}</p>
+    <p>{{ len("hi,disen") }}</p>
+    <p>{% if error_msg %}
+        <span class="error">{{ error_msg  }}</span>
+    {% end %}</p>
+    <p>{% if age < 18%}
+            <span class="error">未成年禁止</span>
+        {% elif age > 60 %}
+            <span class="warn">老人家不易进入</span>
+        {% else %}
+            <span class="success">正常</span>
+    {% end %}</p>
+    <textarea>{{ code }}</textarea>
+    <P>{% raw code %}</P>
+    <p>
+        <script>
+            document.write('{{ code }}')
+        </script>
+    </p>
+</body>
+</html>

@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 
-engine = create_engine('mysql+pymysql://root:19960207@118.178.180.116:3306/edu')
+engine = create_engine('mysql+pymysql://root:19960207@118.178.180.116:3306/lm')
 
 
 #生成数据库连接的类
