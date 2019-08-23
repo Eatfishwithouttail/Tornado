@@ -29,10 +29,10 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: #4285F4;
+    background: white;
 }
 #open{
-    background: #222;
+    background: lightslategrey;
 }
 #open ._after{
     display: block;
@@ -41,7 +41,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: #4285F4;
+    background: greenyellow;
 }
 .list_dt_icon{
     position: absolute;
@@ -61,7 +61,7 @@
     display: none;
 }
 .list_li{
-    background: #4e4e4e;
+    background: lightgoldenrodyellow;
     list-style-type: none;
     color: white;
     width: 120px;
@@ -72,5 +72,5 @@
     border-bottom: 1px solid #6b6b6b;
 }
 .list_li:hover{
-    background: #4285F4;
+    background: lightgray;
 }

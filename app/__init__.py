@@ -8,6 +8,7 @@ from app.views.index_v import INdexHandler
 from app.views.order_v import OrderHandler
 from app.views.search_v import SearchHandler
 from app.views.user import UserHandler
+from app.views.download import DownLoadHandle
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 print(BASE_DIR)
@@ -30,5 +31,6 @@ def make_app(host='localhost'):
         ('/search', SearchHandler),
         ('/cookie', CookieHandler),
         (r'/order/(\d+)/(\d+)',OrderHandler),
-        ('/user',UserHandler)],
+        ('/user',UserHandler),
+        ('/download',DownLoadHandle)],
         default_host=host,**settings)
